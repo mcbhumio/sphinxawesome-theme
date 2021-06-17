@@ -52,7 +52,7 @@ def test_no_collapsible_definitions(app: Sphinx) -> None:
     )
 
     assert dl[1]["class"] == ["std", "option", "code-definition"]
-    dt, dd = [c for c in dl[1].children if c.strip is None]
+    dt, dd = (c for c in dl[1].children if c.strip is None)
     assert dt.name == "dt"
     assert "accordion" not in dt["class"]
     assert dd.name == "dd"
@@ -84,7 +84,7 @@ def test_collapsible_definitions(app: Sphinx) -> None:
         '<dl class="simple"><dt>term</dt><dd><p>definition</p></dd></dl>'
     )
     assert "code-definition" in dl[1]["class"]
-    dt, dd = [c for c in dl[1].children if c.strip is None]
+    dt, dd = (c for c in dl[1].children if c.strip is None)
     assert dt.name == "dt"
     assert dt["class"] == ["sig", "sig-object", "std", "accordion"]
     assert dd.name == "dd"
