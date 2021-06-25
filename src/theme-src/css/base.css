@@ -33,10 +33,10 @@
 
   main {
     & h1 {
-      @apply text-gray-700 text-4xl font-semibold leading-tight mb-12 mt-12;
+      @apply text-gray-700 text-4xl font-semibold leading-tight mb-6 mt-8;
     }
     & h2 {
-      @apply text-gray-700 text-3xl font-semibold leading-snug mb-8 mt-16;
+      @apply text-gray-700 text-3xl font-semibold leading-snug mb-6 mt-8;
     }
     & h3 {
       @apply text-gray-700 text-2xl font-semibold leading-snug mb-6 mt-8;
