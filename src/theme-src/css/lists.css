@@ -25,6 +25,10 @@ li > p {
   @apply my-1;
 }
 
+li > p:last-child {
+  @apply mb-2;
+}
+
 dt {
   @apply font-medium;
 }
