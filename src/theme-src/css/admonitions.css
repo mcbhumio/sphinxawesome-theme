@@ -37,12 +37,12 @@ blockquote {
   @apply bg-green-50 border-green-500;
 }
 
-.warning,
 .danger,
 .error {
   @apply bg-red-50 border-red-500;
 }
 
+.warning,
 .caution,
 .important {
   @apply bg-yellow-50 border-yellow-500;
