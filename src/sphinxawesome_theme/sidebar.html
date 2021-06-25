@@ -6,16 +6,55 @@
 
 <nav
   role="navigation"
-  class="h-full overflow-y-auto bg-gray-50 text-gray-700 pt-14 pl-8 flex flex-col"
+  class="h-full overflow-y-auto bg-gray-50 text-gray-700 pt-4 pl-8 flex flex-col"
 >
-  <div class="nav-toc flex-1 px-5">
-    {%- if theme_nav_include_hidden|lower == 'true' -%}
-      {{ toctree(maxdepth=3, collapse=False, includehidden=true) }}
-    {%- else -%}
-      {{ toctree(maxdepth=3, collapse=False) }}
-    {%- endif -%}
-  </div>
+    <div class="pt-2 pb-8">
+        <select class="p-2 border rounded" id="versions" name="vs-menu" onChange="SelectRedirect();">
+            <option class='vs-note' selected='selected' value="main">Select Version</option>
+            <option class='vs-note' value="cloud">Cloud-Only</option>
+            <option class='vs-note' value="stable">Stable Version</option>
+            <option class='vs-note' value="preview">Preview Version</option>
+            <option class='vs-note' value="previous">Previous Versions</option>
+        </select>
+    </div>
+    <div class="nav-toc flex-1 px-5">
+        {%- if theme_nav_include_hidden|lower == 'true' -%}
+          {{ toctree(maxdepth=3, collapse=False, includehidden=true) }}
+        {%- else -%}
+          {{ toctree(maxdepth=3, collapse=False) }}
+        {%- endif -%}
+    </div>
 
   {%- import "buttons.html" as buttons -%}
   {{ buttons.close("closeSidebar") }}
 </nav>
+
+<script language="javascript">
+    function SelectRedirect(){
+        var a = document.getElementsByClassName("version");
+        var pathArray = window.location.pathname.split('/');
+        var newPathname = "";
+        for (i = 2; i < pathArray.length; i++) {
+            newPathname += "/";
+            newPathname += pathArray[i];
+        }
+        switch(document.getElementById('versions').value)
+        {
+            case "main":
+                window.location="" + newPathname;
+                break;
+            case "cloud":
+                window.location="/cloud" + newPathname;
+                break;
+            case "stable":
+                window.location="/stable" + newPathname;
+                break;
+            case "preview":
+                window.location="/preview" + newPathname;
+                break;
+            case "previous":
+                window.location="/previous-versions";
+                break;
+        }
+    }
+</script>
