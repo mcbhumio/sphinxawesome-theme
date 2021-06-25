@@ -8,6 +8,8 @@ Depending on how you want to use the theme
 and its extensions, use one of the following
 methods to install the Sphinx awesome theme.
 
+   .. rubric:: `Humio Library, Humio Cloud </cloud/index.html>`_
+
    Depending on how you want to use the theme
    and its extensions, use one of the following
    methods to install the Sphinx awesome theme.
