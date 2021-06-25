@@ -8,6 +8,14 @@ Depending on how you want to use the theme
 and its extensions, use one of the following
 methods to install the Sphinx awesome theme.
 
+   Depending on how you want to use the theme
+   and its extensions, use one of the following
+   methods to install the Sphinx awesome theme.
+
+Depending on how you want to use the theme
+and its extensions, use one of the following
+methods to install the Sphinx awesome theme.
+
 .. contents:: On this page
    :local:
    :backlinks: none
