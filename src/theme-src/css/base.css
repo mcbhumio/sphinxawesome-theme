@@ -33,17 +33,19 @@
 
   main {
     & h1 {
-      @apply text-gray-800 text-4xl leading-tight mb-12 mt-12;
+      @apply text-gray-700 text-4xl font-semibold leading-tight mb-12 mt-12;
     }
     & h2 {
-      @apply text-gray-800 text-2xl leading-snug mb-8 mt-16;
+      @apply text-gray-700 text-3xl font-semibold leading-snug mb-8 mt-16;
     }
     & h3 {
-      @apply text-gray-800 text-xl font-medium leading-snug mb-6 mt-8;
+      @apply text-gray-700 text-2xl font-semibold leading-snug mb-6 mt-8;
     }
-    & h4,
+    & h4 {
+      @apply text-gray-700 text-xl font-semibold leading-snug mb-6 mt-8;
+    }
     & .rubric {
-      @apply text-gray-800 font-medium my-6;
+      @apply text-gray-700 font-medium my-6;
     }
   }
 }

@@ -38,7 +38,7 @@ p:not(.admonition-title),
 .toctree-wrapper,
 .contents.local {
   & a {
-    @apply text-blue-700 hover:text-pink-600 focus:text-pink-600;
+    @apply text-gray-700 hover:text-magenta-700 focus:text-magenta-700;
   }
 }
 
@@ -50,12 +50,12 @@ p:not(.admonition-title),
     }
   }
   & .context {
-    @apply text-sm text-gray-800;
+    @apply text-sm text-gray-700;
   }
 }
 
 .highlighted {
-  @apply py-px bg-yellow-100 font-medium;
+  @apply py-px bg-yellow-50 font-medium;
 }
 
 .highlight-link {

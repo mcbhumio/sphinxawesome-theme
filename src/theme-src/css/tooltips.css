@@ -17,7 +17,7 @@
   letter-spacing: normal;
   word-wrap: break-word;
   content: attr(aria-label);
-  @apply opacity-0 px-2 py-3 rounded bg-gray-900 pointer-events-none whitespace-pre font-normal text-center text-xs text-white tracking-wide hidden absolute no-underline;
+  @apply opacity-0 px-2 py-3 rounded bg-gray-700 pointer-events-none whitespace-pre font-normal text-center text-xs text-white tracking-wide hidden absolute no-underline;
 }
 
 /* This is the tooltip arrow */
@@ -27,7 +27,7 @@
   height: 0;
   content: "";
   border: 6px solid transparent;
-  @apply opacity-0 pointer-events-none text-gray-900 hidden absolute;
+  @apply opacity-0 pointer-events-none text-gray-700 hidden absolute;
 }
 
 /* delay animation for tooltip */

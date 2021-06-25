@@ -4,11 +4,11 @@ const colors = {
   black: '#000000',
   white: '#ffffff',
   ultramarine: {
-    DEFAULT: '#456CE3',
+    50: '#F3F7FF',
+    500: '#456CE3',
     600: '#3056CA'
   },
   gray: {
-    DEFAULT: '#636B78',
     50: '#FAFAFA',
     100: '#EDEEEF',
     300: '#C4C8CD',
@@ -16,17 +16,17 @@ const colors = {
     700: '#2E353D'
   },
   red: {
-    DEFAULT: '#F04040',
+    50: '#FFF5F5',
     500: '#F04040',
     'error-dark': '#300D0D'
   },
   yellow: {
-    DEFAULT: '#F9B420',
+    50: '#FFFAEF',
     500: '#F9B420',
     'warning-dark': '#322406'
   },
   green: {
-    DEFAULT: '#31C456',
+    50: '#F5FFF6',
     500: '#31C456',
     'success-dark': '#0A2711'
   },
@@ -61,6 +61,7 @@ module.exports = {
       square: "square",
       latin: "lower-latin",
     },
+    colors: colors,
     extend: {
       screens: {
         print: { raw: "print" },
@@ -69,7 +70,7 @@ module.exports = {
         fluid: "var(--fluid-margin)",
       },
       colors: {
-        blue: colors.lightBlue,
+        blue: colors,
       },
     },
   },

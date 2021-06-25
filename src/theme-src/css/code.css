@@ -34,19 +34,19 @@ pre {
     @apply bg-yellow-50;
   }
   & ins {
-    @apply bg-green-200 no-underline;
+    @apply bg-green-50 no-underline;
     &:before {
       content: "\002b";
       left: 2px;
-      @apply absolute text-green-900;
+      @apply absolute text-green-500;
     }
   }
   & del {
-    @apply bg-red-200 no-underline;
+    @apply bg-red-500 no-underline;
     &:before {
       content: "\2212";
       left: 2px;
-      @apply absolute text-red-900;
+      @apply absolute text-red-500;
     }
   }
   /* line numbers */
@@ -62,16 +62,16 @@ pre {
 /* Diff highlighting inserted/deleted elements
    some pygments themes do not have styles for it */
 span.gd {
-  @apply inline-block bg-red-200 py-px w-full;
+  @apply inline-block bg-red-50 py-px w-full;
 }
 
 span.gi {
-  @apply inline-block bg-green-200 py-px w-full;
+  @apply inline-block bg-green-50 py-px w-full;
 }
 
 /* the header of a code block */
 .code-header {
-  @apply border-l border-t border-r flex justify-between items-center text-sm text-gray-800;
+  @apply border-l border-t border-r flex justify-between items-center text-sm text-gray-700;
   & .caption-text {
     @apply p-2;
   }
@@ -83,21 +83,21 @@ span.gi {
 
 /* make prompts unselectable */
 .gp {
-  @apply select-none pointer-events-none text-blue-800 font-medium;
+  @apply select-none pointer-events-none text-ultramarine-600 font-medium;
 }
 
 /* from the 'samp' directive */
 em.var {
-  @apply text-purple-700 font-medium;
+  @apply text-magenta-700 font-medium;
 }
 
 /* from the 'samp' role */
 .samp > em {
-  @apply text-purple-700;
+  @apply text-magenta-700;
 }
 
 button.copy {
-  @apply p-2 ml-auto focus:text-pink-600 hover:text-pink-600;
+  @apply p-2 ml-auto focus:text-magenta-700 hover:text-magenta-700;
   & > svg {
     @apply h-4 w-4 fill-current;
   }
@@ -115,7 +115,7 @@ dl.code-definition {
 
 dl.code-definition:not(.option) {
   & .sig-prename {
-    @apply text-gray-600;
+    @apply text-gray-500;
   }
   & .sig-name {
     @apply text-lg;
@@ -128,7 +128,7 @@ dl.code-definition:not(.option) {
 /* .. option:: */
 dl.option {
   & .sig-prename {
-    @apply italic text-purple-700;
+    @apply italic text-magenta-700;
   }
 }
 
