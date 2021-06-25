@@ -4,8 +4,12 @@
 
 blockquote {
   @apply text-sm my-6 px-4 bg-ultramarine-50 border border-ultramarine-500 border-l-4;
+
   & .attribution {
     @apply italic;
+  }
+  & a {
+    @apply text-ultramarine-600;
   }
 }
 

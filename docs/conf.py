@@ -57,7 +57,14 @@ html_domain_indices = False  # Don't need module indices
 # extra option from the sphinxawesome_theme
 html_collapsible_definitions = True
 
-html_theme_options = {"show_scrolltop": True}
+html_theme_options = {
+    "nav_include_hidden": True,
+    "show_nav": True,
+    "show_breadcrumbs": True,
+    "breadcrumbs_separator": "/",
+    "show_prev_next": True,
+    "show_scrolltop": True
+}
 
 # -- Register a :dir: interpreted text role ----------------------------------
 

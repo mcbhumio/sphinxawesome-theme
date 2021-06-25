@@ -6,7 +6,7 @@
       grid-template-areas:
         "header header"
         "sidebar main";
-      grid-template-columns: max(var(--sidebar-width), 17%) 1fr;
+      grid-template-columns: max(var(--sidebar-width), 20%) 1fr;
       grid-template-rows: min-content 1fr;
     }
     .grid-area-header {

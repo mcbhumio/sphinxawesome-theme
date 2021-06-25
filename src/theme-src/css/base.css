@@ -45,7 +45,7 @@
       @apply text-gray-700 text-xl font-semibold leading-snug mb-6 mt-8;
     }
     & .rubric {
-      @apply text-gray-700 font-medium my-6;
+      @apply text-ultramarine-600 font-medium my-6;
     }
   }
 }
