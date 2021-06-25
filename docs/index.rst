@@ -28,7 +28,6 @@ The source code is available on GitHub_.
 .. _GitHub: https://github.com/kai687/sphinxawesome-theme
 
 .. toctree::
-   :hidden:
    :caption: docs
 
    how-to/install
@@ -38,7 +37,6 @@ The source code is available on GitHub_.
    update
 
 .. toctree::
-   :hidden:
    :caption: demo
    :glob:
 

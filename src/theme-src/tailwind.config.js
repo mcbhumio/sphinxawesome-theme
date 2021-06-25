@@ -1,4 +1,41 @@
-const colors = require("tailwindcss/colors");
+const colors = {
+  transparent: 'transparent',
+  current: 'currentColor',
+  black: '#000000',
+  white: '#ffffff',
+  ultramarine: {
+    DEFAULT: '#456CE3',
+    600: '#3056CA'
+  },
+  gray: {
+    DEFAULT: '#636B78',
+    50: '#FAFAFA',
+    100: '#EDEEEF',
+    300: '#C4C8CD',
+    500: '#636B78',
+    700: '#2E353D'
+  },
+  red: {
+    DEFAULT: '#F04040',
+    500: '#F04040',
+    'error-dark': '#300D0D'
+  },
+  yellow: {
+    DEFAULT: '#F9B420',
+    500: '#F9B420',
+    'warning-dark': '#322406'
+  },
+  green: {
+    DEFAULT: '#31C456',
+    500: '#31C456',
+    'success-dark': '#0A2711'
+  },
+  magenta: {
+    600: '#D03592',
+    700: '#A52772'
+  }
+}
+
 
 module.exports = {
   corePlugins: {

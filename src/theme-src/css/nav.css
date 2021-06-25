@@ -45,6 +45,7 @@
 /* This is for on-page navigation menus
  * have to set `display: block` explicitly
  * b/c that's also a class in Tailwind */
+/*
 .toctree-wrapper,
 .contents.local {
   @apply mt-12 block;
@@ -61,9 +62,11 @@
     @apply text-pink-600;
   }
 }
-
+*/
 /* to make the style more consistent between
  * .toctree-wrapper and .contents */
+/*
 .toctree-wrapper li {
   @apply my-3;
 }
+*/
