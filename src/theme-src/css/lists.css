@@ -22,7 +22,7 @@ section ul > li {
 }
 
 li > p {
-  @apply my-3;
+  @apply my-1;
 }
 
 dt {
