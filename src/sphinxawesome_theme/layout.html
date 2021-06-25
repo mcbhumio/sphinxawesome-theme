@@ -95,7 +95,7 @@
         </aside>
       {%- endif %}
 
-      <main class="px-5 lg:ml-fluid grid-area-main overflow-y-auto flex flex-col h-full {% if theme_show_nav|lower != 'true' -%}mx-auto{%- endif -%}">
+      <main class="px-3 lg:ml-fluid grid-area-main overflow-y-auto flex flex-col h-full {% if theme_show_nav|lower != 'true' -%}mx-auto{%- endif -%}">
         {%- if pagename != master_doc and theme_show_breadcrumbs|lower == 'true' %}
           {%- include "breadcrumbs.html" %}
         {% endif -%}
