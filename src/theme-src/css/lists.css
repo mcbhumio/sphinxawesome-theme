@@ -16,17 +16,17 @@ section:not(#search-results) ul {
   }
 }
 
-ol > li,
-section ul > li {
-  @apply pl-2;
-}
+/*ol > li,*/
+/*section ul > li {*/
+/*  @apply pl-2;*/
+/*}*/
 
 li > p {
   @apply my-1;
-}
 
-li > p:last-child {
-  @apply mb-2;
+  & a {
+    @apply text-ultramarine-600;
+  }
 }
 
 dt {

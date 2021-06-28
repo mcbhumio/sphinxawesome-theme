@@ -2,6 +2,10 @@
  * Styles for the navigation menu on the left side .nav-toc
  * ********************************************************/
 
+.nav-container {
+  max-width: 12rem;
+}
+
 .nav-toc .caption,
 .toctree-wrapper .caption,
 .contents.local .topic-title {
@@ -45,28 +49,27 @@
 /* This is for on-page navigation menus
  * have to set `display: block` explicitly
  * b/c that's also a class in Tailwind */
-/*
-.toctree-wrapper,
-.contents.local {
-  @apply mt-12 block;
-  & ul {
-    @apply mx-0 !important;
-  }
-  & li {
-    @apply list-none px-0 !important;
-    & > ul {
-      @apply pl-4;
-    }
-  }
-  & a.current {
-    @apply text-pink-600;
-  }
-}
-*/
+
+/*.toctree-wrapper,*/
+/*.contents.local {*/
+/*  @apply mt-12 block;*/
+/*  & ul {*/
+/*    @apply mx-0 !important;*/
+/*  }*/
+/*  & li {*/
+/*    @apply list-none px-0 !important;*/
+/*    & > ul {*/
+/*      @apply pl-4;*/
+/*    }*/
+/*  }*/
+/*  & a.current {*/
+/*    @apply text-magenta-700;*/
+/*  }*/
+/*}*/
+
 /* to make the style more consistent between
  * .toctree-wrapper and .contents */
-/*
-.toctree-wrapper li {
-  @apply my-3;
-}
-*/
+
+/*.toctree-wrapper li {*/
+/*  @apply my-3;*/
+/*}*/

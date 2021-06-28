@@ -3,21 +3,22 @@
  * **************************/
 
 blockquote {
-  @apply text-sm my-6 px-4 bg-ultramarine-50 border border-ultramarine-500 border-l-4;
+  @apply text-sm my-3 px-4 bg-ultramarine-50 border border-ultramarine-500 border-l-4;
 
   & .attribution {
     @apply italic;
   }
-  & a {
-    @apply text-ultramarine-600;
-  }
+}
+
+blockquote a {
+  @apply text-ultramarine-600;
 }
 
 .admonition {
-  @apply text-sm my-6 p-4 bg-ultramarine-50 border border-ultramarine-500 border-l-4;
+  @apply text-sm my-3 p-4 bg-ultramarine-50 border border-ultramarine-500 border-l-4;
 
   & p:not(.admonition-title) {
-    @apply my-4;
+    @apply my-3;
   }
   & p:last-child {
     @apply mb-0;

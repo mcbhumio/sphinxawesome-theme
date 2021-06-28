@@ -49,30 +49,30 @@ Use a general admonition for notes with custom titles.
 
       .. admonition:: How to give the admonition a title?
 
-Caution
+Warning
 -------
 
-Use a ``caution`` admonition to make the user aware of important issues,
+Use a ``warning`` admonition to make the user aware of important issues,
 or consequences.
 
-.. caution::
+.. warning::
 
    This is how a caution appears.
 
 The ``important`` admonition is considered equivalent and appears in the same style.
 
-Warning
+Error
 -------
 
-A ``warning`` is a negative admonition.
+A ``error`` is a negative admonition.
 Typically, anything involving security should be emphasized with a warning.
 Ignoring the information in a warning usually has negative consequences.
 
-.. warning::
+.. error::
 
-   This is how a warning appears.
+   This is how an error appears.
 
-The ``danger`` and ``error`` admonitions are considered equivalent and appear in
+The ``danger`` admonitions is considered equivalent and appear in
 the same style.
 
 Blockquotes
@@ -85,3 +85,10 @@ and as such are often set apart from the main text.
     "It is my business to know things. That is my trade."
 
     -- Sherlock Holmes
+
+
+This is a blockquote with a list inside:
+
+    * This is a thing.
+    * This is another thing.
+    * Oh look! Things!
