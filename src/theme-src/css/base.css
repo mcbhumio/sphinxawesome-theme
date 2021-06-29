@@ -46,10 +46,6 @@
     }
     & .rubric {
       @apply text-gray-700 text-lg font-semibold my-3;
-
-      & a {
-        @apply text-ultramarine-600 !important;
-      }
     }
   }
 }
