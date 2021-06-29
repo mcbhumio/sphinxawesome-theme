@@ -3,7 +3,7 @@
  * **************************/
 
 blockquote {
-  @apply text-sm px-4 bg-ultramarine-50 border border-ultramarine-500 border-l-4;
+  @apply text-sm px-4 bg-gray-50 border border-gray-300 border-l-4;
 
   & .attribution {
     @apply italic;
@@ -11,10 +11,6 @@ blockquote {
   & ul {
     @apply py-2;
   }
-}
-
-blockquote a {
-  @apply text-ultramarine-600;
 }
 
 .admonition {
