@@ -58,9 +58,15 @@
       var basePathname = "";
       var newPathname = "";
 
-      var baseindex = 2;
+      var baseindex = 1;
 
-      if (getMeta('humio-base') != '')
+      var humiobase = getMeta('humio-base');
+
+      if ((humiobase === "stable") ||
+	  (humiobase === "cloud") ||
+	  (humiobase === "preview") ||
+	  (humiobase === "previous") 
+	 )
       {
           baseindex++;
       }
