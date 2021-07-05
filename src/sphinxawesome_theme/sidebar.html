@@ -35,31 +35,64 @@
 </nav>
 
 <script language="javascript">
-    function SelectRedirect(){
-        var a = document.getElementsByClassName("version");
-        var pathArray = window.location.pathname.split('/');
-        var newPathname = "";
-        for (i = 2; i < pathArray.length; i++) {
-            newPathname += "/";
-            newPathname += pathArray[i];
-        }
-        switch(document.getElementById('versions').value)
-        {
-            case "main":
-                window.location="" + newPathname;
-                break;
-            case "cloud":
-                window.location="/cloud" + newPathname;
-                break;
-            case "stable":
-                window.location="/stable" + newPathname;
-                break;
-            case "preview":
-                window.location="/preview" + newPathname;
-                break;
-            case "previous":
-                window.location="/previous-versions";
-                break;
-        }
-    }
+
+  function getMeta(metaName) {
+      const metas = document.getElementsByTagName('meta');
+
+      for (let i = 0; i < metas.length; i++) {
+	  if (metas[i].getAttribute('name') === metaName) {
+	      return metas[i].getAttribute('content');
+	  }
+      }
+      
+      return '';
+  }
+
+  function SetRedirect(){
+      document.getElementById('versions').value = getMeta('humio-base') || 'main';
+  }
+
+  function SelectRedirect(){
+      var pathArray = window.location.pathname.split('/');
+
+      var basePathname = "";
+      var newPathname = "";
+
+      var baseindex = 2;
+
+      if (getMeta('humio-base') != '')
+      {
+          baseindex++;
+      }
+
+      for (i = baseindex; i < pathArray.length; i++) {
+	  newPathname += "/";
+	  newPathname += pathArray[i];
+      }
+
+      var newpath = "";
+
+      switch(document.getElementById('versions').value)
+      {
+	  case "main":
+	  newpath=basePathname + "" + newPathname;
+	  break;
+	  case "cloud":
+	  newpath=basePathname + "/cloud" + newPathname;
+	  break;
+	  case "stable":
+	  newpath=basePathname + "/stable" + newPathname;
+	  break;
+	  case "preview":
+	  newpath=basePathname + "/preview" + newPathname;
+	  break;
+	  case "previous":
+	  newpath=basePathname + "/previous-versions";
+	  break;
+      }
+
+      window.location = newpath;
+  }
+  window.onload = SetRedirect;
+
 </script>
