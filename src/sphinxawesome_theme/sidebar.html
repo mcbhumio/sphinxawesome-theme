@@ -35,14 +35,13 @@
 </nav>
 
 <script language="javascript">
-
   function getMeta(metaName) {
       const metas = document.getElementsByTagName('meta');
 
       for (let i = 0; i < metas.length; i++) {
-	  if (metas[i].getAttribute('name') === metaName) {
-	      return metas[i].getAttribute('content');
-	  }
+          if (metas[i].getAttribute('name') === metaName) {
+              return metas[i].getAttribute('content');
+          }
       }
       
       return '';
@@ -72,29 +71,29 @@
       }
 
       for (i = baseindex; i < pathArray.length; i++) {
-	  newPathname += "/";
-	  newPathname += pathArray[i];
+          newPathname += "/";
+          newPathname += pathArray[i];
       }
 
       var newpath = "";
 
       switch(document.getElementById('versions').value)
       {
-	  case "main":
-	  newpath=basePathname + "" + newPathname;
-	  break;
-	  case "cloud":
-	  newpath=basePathname + "/cloud" + newPathname;
-	  break;
-	  case "stable":
-	  newpath=basePathname + "/stable" + newPathname;
-	  break;
-	  case "preview":
-	  newpath=basePathname + "/preview" + newPathname;
-	  break;
-	  case "previous":
-	  newpath=basePathname + "/previous-versions";
-	  break;
+          case "main":
+          newpath=basePathname + "" + newPathname;
+          break;
+          case "cloud":
+          newpath=basePathname + "/cloud" + newPathname;
+          break;
+          case "stable":
+          newpath=basePathname + "/stable" + newPathname;
+          break;
+          case "preview":
+          newpath=basePathname + "/preview" + newPathname;
+          break;
+          case "previous":
+          newpath=basePathname + "/previous-versions";
+          break;
       }
 
       window.location = newpath;

@@ -50,6 +50,11 @@
  * have to set `display: block` explicitly
  * b/c that's also a class in Tailwind */
 
+.toctree-wrapper,
+.contents.local {
+  @apply hidden;
+}
+
 /*.toctree-wrapper,*/
 /*.contents.local {*/
 /*  @apply mt-12 block;*/
